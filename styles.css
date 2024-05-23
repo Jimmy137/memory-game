@@ -71,6 +71,7 @@ h2{
     height: 300px;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .flip-card {
@@ -128,6 +129,17 @@ h2{
     }
     .options{
         align-items: flex-start;
+    }
+
+}
+@media screen and (max-width: 460px) {
+    .flip-card{
+        max-width: 18%;
+        max-height: 20%;
+    }
+    .flip-card img {
+        object-fit: cover !important;
+        width: 100%;
     }
 
 }
